@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pw.tayyab.flightbookingapp" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AdminMainActivity" />
+        <activity android:name=".ClientMainActivity" />
+
+        <activity android:name=".AdminSearchClientActivity" />
+        <activity android:name=".UserEditClientActivity" />
+        <activity android:name=".UserDisplayClientInfoActivity" />
+        <activity android:name=".AdminUploadClientsActivity" />
+
+        <activity android:name=".AdminUploadFlightsActivity" />
+        <activity android:name=".AdminSearchFlightActivity" />
+        <activity android:name=".AdminEditFlightActivity" />
+        <activity android:name=".AdminDisplayFlightInfoActivity" />
+
+        <activity android:name=".ClientViewItinerariesActivity" />
+
+        <activity android:name=".UserSearchFlightsActivity"/>
+        <activity android:name=".UserDisplayFlightsActivity"/>
+        <activity android:name=".UserBookItineraryActivity"/>
+    </application>
+
+</manifest>

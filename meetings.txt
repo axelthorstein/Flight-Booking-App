@@ -1,0 +1,117 @@
+Meeting 1 - Phase 3
+
+- Decided on the demo function for Phase 3a
+- Delegated tasks for Phase 3.
+	- Tayyab and Axel: Responsible for the UI and implementing the code in the application itself.
+	- Biron and Andrew: Responsible for the coding section of the Phase. Refactoring User class into Client/Admin. Retesting existing code with new changes.
+- Next meeting in CDF Lab on Monday.
+	- Going through the walkthrough for P3
+
+---------
+
+Meeting 2 - Phase 3 - 11/28/2015
+
+- Decided that the meetings should be on a daily basis. 
+
+* STATUS UPDATE *
+- Tayyab: Made the barebones of the Login(MainActivity). Added check to see if user is an admin or a client.
+
+
+* NEW TASK ASSIGNMENTS *
+- Tayyab: Optimize the login panel
+Deadline - 11/29/2015
+- Axel: Optimize the login panel
+Deadline - 11/29/2015
+- Andrew: Work on splitting the User class into an Admin and User class for further implementation
+Deadline - 11/30/2015
+- Biron: Work on splitting the User class into the Admin and User class for further implementation
+
+---------
+
+Meeting 3 - Phase 3 - 11/30/2015
+
+* GENERAL NOTES *
+
+- Changed communication medium to Slack. A user log will be maintained on Google Docs.
+- Completed the launch booking app feature, login implementation, admin - upload flight data
+- Demos so that everyone in the group knows how the application currently works
+- Decided how the group will function in the next coming days
+	- Tayyab won't be working on the 1st of December due to an upcoming midterm.
+	- Axel has agreed to take over Tayyab's work for the 1st of December
+	- Biron and Andrew will continue working on making changes to the P2 project files so that it can be used in P3
+
+* STATUS UPDATE *
+
+- Biron and Andrew split the User class into Admin and User
+- Tayyab and Axel worked on the interface and implemented a few features in the application
+
+* TASK ASSIGNMENTS *
+
+- Axel and/or Tayyab: Fix the upload flights feature. Currently has an issue accessing files from the External storage.
+- Axel and/or Tayyab: Add the upload client list feature
+Deadline: 12/02/2015
+
+- Biron and Andrew: Complete the backend changes for P3
+Deadline: 12/04/2015 (NOT A FIRM DEADLINE)
+
+---------
+
+Meeting 4 - Phase 3 - 12/02/2015
+
+* GENERAL NOTES *
+
+- Visited Prof. Jonathan's office hours, debugged a few errors in the search algorithm
+- Went through the Activity's for the interview on Thursday @ 2:25pm
+
+* STATUS UPDATE *
+
+- Axel: Got the upload flights and upload client list feature working. Changed the Database to a Singleton. Running into an issue with the Database. 
+- Tayyab: Started work on searching Flight objects and clients.
+
+* TASK ASSIGNMENT *
+
+- Tayyab: Implement the searchFlights Activity
+- Axel: Fix the Database Singleton implementation, complete work on serialization, and work on the view bug with searchFlights. 
+- Anyone: who ever finishes first will start work on the searchClients activity. 
+Deadline: 12/03/2015
+
+- Biron and Andrew: NO NEW TASK ASSIGNMENTS. CONTINUE WORKING ON PREVIOUSLY ASSIGNED TASK
+Deadline: 12/04/2015 (NOT A FIRM DEADLINE)
+
+Meeting 5 - Phase 3 - 12/04/2015
+
+* GENERAL NOTES *
+
+- Biron and Andrew have been having issues with getting Android studio to work on their machines, so my 05/12 they should aim to have that fixed so they can start working on implementing more front end features for client. Until then, they are also aiming to add unit tests for the features that they added in the backend. 
+
+
+* STATUS UPDATE *
+
+- Axel: Implemented serialization so that it is fully functional for the database, which was made possible by completing the change of the database to a singleton. This change also caused us to remove all the static references in Database, and make corresponding changes to all of the backend classes, and changed the User class from an Interface to an Abstract class, and made necessary changes to Admin and Client. Axel also fixed the bug with searchFlights where the app crashed, having to do with the AndroidManifest and where the view was set in AdminSearchFlightRequest. Axel is finished implementing searchClients and just needs to iron out one bug with the wrong string output. 
+- Tayyab: Finished implementing searchFlights, and helped Axel address view bug. Reviewed all the mistakes made in PII and worked on fixes for submission of PIII. 
+
+* TASK ASSIGNMENT *
+
+- Tayyab: Implement client login functionality, and decide with axel which client features should be added first. 
+- Axel: Decide with Tayyab which client features should be added first, then begin implementation. 
+
+- Biron and Andrew: Working on getting android studio to work on their machines, and in the meantime make extensive Junit tests. Once that is complete they will begin adding client flight booking functionality. 
+
+Meeting 6 - Phase 3 - 12/07/2015
+
+* GENERAL NOTES *
+
+Andrew and Biron have android studio working on their machines now.
+
+* STATUS UPDATE *
+Axel - Has finished search flights for User, booking flights (activity and layout) for clients, admin ability to search and book flights for clients. Also added/fixed success and fail checks for all admin activities and cleaned up some of the activity code. Added catches for exceptions so that the app doesn’t crash. Fixed save path so that it isn’t hard coded.  Added client’s ability to view booked itineraries, and debugged client features so they no longer crash, and all work properly. Fixed search flight/itinerary activity, and rerouted Admin’s client activities so they pass through the client main activity, but keep track of the user as an admin. 
+Tayyab - Worked on search itineraries, and search flights booking flow, helped test, and debug app. Went over existing code, and fixed errors. Added exception catching for Activities. 
+Biron - Merged the Search class over to the abstract User class. Filled out Driver, reviewed function outputs for correctness. Added bookItinerary methods for Admin and Client. Fixed and filled out Java docs on the back end. Searched and wrote test cases looking for stop over issue with Andrew. Completed CRC cards for phase III.
+Andrew - Edited addFlight so for flights with the same flight num it now deletes old flight in arraylist and locations map and adds new flight to array list and locations maps. Added ifBookable method to check if itinerary is bookable. Updated getItineraries, getItinerariesSortedByCost and getItinerariesSortedByTime to go through getBookableItineraries. Deleted the Search and SearchTests files completely. All Searching and sorting is now in the User class.
+
+
+* TASK ASSIGNMENT *
+Axel - Add comments to all of the activity code, and clean up hard coded variables, and repeated code. Start work on the README.txt which Tayyab can later finish. Restructure the files and packages in a way that is cleaner. Review and test all front end code. 
+Tayyab - Work on User (Client or Admin) can display search results sorted by total travel time or by total cost. Finish README.txt after Axel has started some. Help adding JavaDocs and comments to code. Review and test all frontend code. 
+Biron - Test cases for book itinerary. Update CRC cards with any changes.
+Andrew - Test driver thoroughly, and help comment and javadoc the backend code. 
